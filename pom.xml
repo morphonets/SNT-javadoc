@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>RELEASE</version>
+		<relativePath />
+	</parent>
+
+	<groupId>org.morphonets</groupId>
+	<artifactId>SNT-javadoc</artifactId>
+	<version>0-SNAPSHOT</version>
+
+	<name>SNT Javadocs</name>
+	<description>All the Javadocs for SNT.</description>
+	<url>https://javadoc.scijava.org/SNT/</url>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>Morphonets</name>
+		<url>https://morphonets.org/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>tferr</id>
+			<name>Tiago Ferreira</name>
+			<url>https://imagej.net/User:Tiago</url>
+			<roles>
+				<role>lead</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Cameron Arshadi</name>
+			<url>https://imagej.net/User:Arshadi</url>
+			<properties><id>carshadi</id></properties>
+			<roles>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<url>https://imagej.net/User:Rueden</url>
+			<roles>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<!--
+		NB: Need at least one element to override the parent.
+		See: https://issues.apache.org/jira/browse/MNG-5220
+		-->
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/tag/snt</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/morphonets/SNT-javadoc</connection>
+		<developerConnection>scm:git:git@github.com:morphonets/SNT-javadoc</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/morphonets/SNT-javadoc</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/morphonets/SNT-javadoc/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/morphonets/SNT-javadoc/actions</url>
+	</ciManagement>
+
+	<properties>
+		<automatic-module-name>org.morphonets.javadoc</automatic-module-name>
+		<license.licenseName>BSD-2-Clause</license.licenseName>
+		<license.copyrightOwners>Morphonets developers</license.copyrightOwners>
+
+		<SNT.version>RELEASE</SNT.version>
+
+		<!-- NB: This component is not intended to be released! -->
+		<releaseProfiles>-</releaseProfiles>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.morphonets</groupId>
+			<artifactId>SNT</artifactId>
+			<version>${SNT.version}</version>
+		</dependency>
+	</dependencies>
+</project>
